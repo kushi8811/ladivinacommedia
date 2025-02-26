@@ -17,7 +17,7 @@ export const metadata = {
 export default async function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/logo.png" />
       <body className={`${josefin.className} overflow-x-hidden`}>
         <Header />
         <main className="relative bg-black">{children}</main>
