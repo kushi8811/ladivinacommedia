@@ -4,8 +4,8 @@ import dante from "@/public/images/dante.png";
 import localFont from "next/font/local";
 
 const fioreFont = localFont({
-  src: "./../../public/fonts/Fiore.ttf",
-  display: "block",
+  src: "/fonts/Fiore.ttf",
+  display: "",
   weight: "400",
 });
 // const mono = Space_Mono({
