@@ -24,15 +24,16 @@ const images = [
 export default function HeroSection() {
   const [index, setIndex] = useState(0);
   const [showText, setShowText] = useState(false);
+  const [fade, setFade] = useState(false);
 
   useEffect(() => {
-    // Image change interval (5 seconds)
     const interval = setInterval(() => {
-      setShowText(false); // Hide text at 4.5s
+      setFade(true); // Start fading out the image
       setTimeout(() => {
-        setIndex((prevIndex) => (prevIndex + 1) % images.length); // Change image
-      }, 500); // Delay image change
-    }, 5000); // Total cycle: 5s
+        setIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setFade(false); // Fade in the new image
+      }, 700); // Delay before changing the image
+    }, 5000); // Change every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -52,8 +53,13 @@ export default function HeroSection() {
 
   return (
     <div className="relative w-full h-[80vh] overflow-hidden">
-      {/* Image Background */}
-      <div className="absolute inset-0 transition-opacity duration-1000 ease-in-out">
+      {/* Image Background with Smooth Fade */}
+      <div
+        key={index} // Forces smooth transitions
+        className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+          fade ? "opacity-0" : "opacity-100"
+        }`}
+      >
         <Image
           src={images[index].src}
           alt="Hero Background"
@@ -63,7 +69,7 @@ export default function HeroSection() {
         />
       </div>
 
-      {/* Text Overlay with Rounded Container */}
+      {/* Text Overlay with Your Existing Animation */}
       <div className={`hero-container ${showText ? "hero-show" : "hero-hide"}`}>
         <div
           className={`hero-text-container ${
