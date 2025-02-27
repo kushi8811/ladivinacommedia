@@ -5,14 +5,10 @@ import localFont from "next/font/local";
 
 const fioreFont = localFont({
   src: "/fonts/Fiore.ttf",
-  display: "",
+  display: "block",
   weight: "400",
 });
-// const mono = Space_Mono({
-//   subsets: ["latin"],
-//   display: "swap",
-//   weight: "700",
-// });
+
 function Dante() {
   return (
     <section className="text-center py-12">
@@ -21,13 +17,12 @@ function Dante() {
         <Image
           src={dante}
           alt="Dante Logo"
-          width={200} // You can adjust the size as needed
-          height={200} // You can adjust the size as needed
+          width={200}
+          height={200}
           className="object-contain"
         />
       </div>
 
-      {/* Dante Quote */}
       <p
         className={`${fioreFont.className} text-lg sm:text-xl md:text-2xl font-serif text-accent-500 leading-relaxed px-6 sm:px-12`}
       >
