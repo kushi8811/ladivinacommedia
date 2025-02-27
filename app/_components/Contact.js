@@ -41,7 +41,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="relative w-[90%] sm:w-[95%] ml-8 h-[75vh] rounded-2xl max-w-lg mx-auto border border-primary-50 p-6 bg-white shadow-lg mt-[75px] pt-10 mb-4 pb-6">
+    <div className="relative w-[90%] items-center justify-center sm:w-[95%] ml-8 h-[75vh] rounded-2xl max-w-lg mx-auto border border-primary-50 p-6 bg-white shadow-lg mt-[75px] pt-10 mb-4 pb-6">
       <h2 className="text-2xl text-center font-semibold text-gray-800 mb-4 items-center">
         Contact Us
       </h2>
