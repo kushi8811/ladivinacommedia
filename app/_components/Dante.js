@@ -1,9 +1,9 @@
 import Image from "next/image";
-import dante from "@/public/images/dante.png";
+// import dante from "@/public/images/dante.png";
 import localFont from "next/font/local";
 
 const fioreFont = localFont({
-  src: "../public/fonts/Fiore.ttf",
+  src: "/fonts/Fiore.ttf",
   display: "swap",
   weight: "400",
 });
@@ -14,7 +14,7 @@ function Dante() {
       {/* Dante Logo */}
       <div className="flex justify-center items-center mb-6">
         <Image
-          src={dante}
+          src="/images/dante.png"
           alt="Dante Logo"
           width={200}
           height={200}
