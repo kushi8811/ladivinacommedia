@@ -2,13 +2,7 @@
 "use client";
 import React, { useState } from "react";
 import localFont from "next/font/local";
-import { Montserrat } from "next/font/google";
 
-const mono = Montserrat({
-  subsets: ["latin"],
-  display: "block",
-  weight: "400",
-});
 const taglienteFont = localFont({
   src: "./../../public/fonts/Tagliente.ttf",
   display: "block",
