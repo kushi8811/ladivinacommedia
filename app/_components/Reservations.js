@@ -25,7 +25,7 @@ const ReservationsContainer = () => {
           alt="Reservation Background"
           width={200} // Adjusted size
           height={200} // Adjusted size
-          className="object-contain absolute mt-[100px] top-[20px] sm:top-[20px] md:top-8 z-8"
+          className="object-contain absolute mt-[120px] top-[20px] sm:top-[20px] md:top-8 z-8"
           priority
         />
 

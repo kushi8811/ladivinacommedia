@@ -1,6 +1,7 @@
 import Image from "next/image";
 // import dante from "@/public/images/dante.png";
 import localFont from "next/font/local";
+import Link from "next/link";
 
 const fioreFont = localFont({
   src: "../fonts/Fiore.ttf",
@@ -29,9 +30,11 @@ function Dante() {
         journey of taste and soul. Come, embark on this experience, where every
         bite is poetry in motion.
       </p>
-      <button className="mt-4 sm:mt-6 px-6 py-2 border border-black uppercase text-xs tracking-wider bg-primary-50 text-white hover:bg-white hover:text-black transition duration-200">
-        Discover more
-      </button>
+      <Link href="/about">
+        <button className="mt-4 sm:mt-6 px-6 py-2 border border-black uppercase text-xs tracking-wider bg-primary-50 text-white hover:bg-white hover:text-black transition duration-200">
+          Discover more
+        </button>
+      </Link>
     </section>
   );
 }
