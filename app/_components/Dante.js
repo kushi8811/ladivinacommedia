@@ -3,7 +3,7 @@ import dante from "@/public/images/dante.png";
 import localFont from "next/font/local";
 
 const fioreFont = localFont({
-  src: "..public/fonts/Fiore.ttf",
+  src: "../public/fonts/Fiore.ttf",
   display: "swap",
   weight: "400",
 });
