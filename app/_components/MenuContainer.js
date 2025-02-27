@@ -20,7 +20,7 @@ const MenuContainer = () => {
         transition={{ type: "spring", stiffness: 100, damping: 15 }}
         className="relative w-[90%] sm:w-[95%] md:w-[80%] lg:w-[70%] 
                    max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl 
-                   h-[105vh] sm:h-[95vh] md:h-[100vh] flex items-center justify-center 
+                   h-[105vh] sm:h-[75vh] md:h-[100vh] flex items-center justify-center 
                    rounded-2xl overflow-hidden shadow-lg"
       >
         {/* Background Image */}
