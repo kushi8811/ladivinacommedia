@@ -1,10 +1,9 @@
 import Image from "next/image";
 import dante from "@/public/images/dante.png";
-// import { Space_Mono } from "next/font/google";
 import localFont from "next/font/local";
 
 const fioreFont = localFont({
-  src: "/fonts/Fiore.ttf",
+  src: "..public/fonts/Fiore.ttf",
   display: "swap",
   weight: "400",
 });
