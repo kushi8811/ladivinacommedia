@@ -65,7 +65,7 @@ const Footer = () => {
             <FaPhone />
           </Link>
           <Link
-            href="mail:info@ristoanteladivina.com"
+            href="email:info@ristoanteladivina.com"
             className="hover:text-white transition"
           >
             <FaMailBulk />

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import menu1 from "@/public/images/menu.png";
 import { Montserrat } from "next/font/google";
-
+import Link from "next/link";
 const mono = Montserrat({
   subsets: ["latin"],
   display: "block",
@@ -42,13 +42,15 @@ const MenuContainer = () => {
             divine.”
           </p>
 
-          <button
-            className="mt-4 sm:mt-6 px-6 py-2 border-2 text-primary-50 font-bold border-primary-50  
+          <Link href="/menu">
+            <button
+              className="mt-4 sm:mt-6 px-6 py-2 border-2 text-primary-50 font-bold border-primary-50  
                              uppercase text-xs tracking-wider hover:bg-white hover:text-primary-50 
                              transition"
-          >
-            Explore the Menu
-          </button>
+            >
+              Explore the Menu
+            </button>
+          </Link>
         </div>
       </motion.div>
     </div>
