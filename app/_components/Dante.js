@@ -3,7 +3,7 @@ import Image from "next/image";
 import localFont from "next/font/local";
 
 const fioreFont = localFont({
-  src: "/fonts/Fiore.ttf",
+  src: "../fonts/Fiore.ttf",
   display: "swap",
   weight: "400",
 });
