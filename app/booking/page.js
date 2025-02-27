@@ -149,8 +149,8 @@ function Page() {
 
   return (
     <div className={`${mono.className} bg-white min-h-screen`}>
-      <div className="border border-primary-50 rounded-md m-10">
-        <div className="max-w-lg mx-auto p-8 mt-8 bg-white shadow-lg rounded-lg">
+      <div className="border border-primary-50 rounded-md m-">
+        <div className="max-w-lg mx-auto p-6 mt-1  bg-white shadow-lg rounded-lg">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
             Reserve a Table
           </h2>

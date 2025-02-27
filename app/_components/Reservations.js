@@ -11,7 +11,7 @@ const mono = Montserrat({
 
 const ReservationsContainer = () => {
   return (
-    <div className="relative w-[90%] sm:w-[95%] ml-8 h-[110vh] rounded-2xl flex items-center justify-center bg-primary-50 py-16 sm:py-24">
+    <div className="relative w-[90%] sm:w-[95%] ml-8 h-[75vh] rounded-2xl flex items-center justify-center bg-primary-50 py-16 sm:py-24">
       {/* Static Container (EXACT same size as MenuContainer) */}
       <div
         className="relative w-[90%] sm:w-[95%] md:w-[80%] lg:w-[70%] 
