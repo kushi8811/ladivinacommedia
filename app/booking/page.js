@@ -157,7 +157,7 @@ function Page() {
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block text-gray-600 font-medium mb-1">
+                <label className="block text-black font-medium mb-1">
                   Full Name
                 </label>
                 <input
@@ -172,7 +172,7 @@ function Page() {
                 />
               </div>
               <div>
-                <label className="block text-gray-600 font-medium mb-1">
+                <label className="block text-black font-medium mb-1">
                   Phone Number
                 </label>
                 <input
@@ -189,9 +189,7 @@ function Page() {
             </div>
 
             <div>
-              <label className="block text-gray-600 font-medium mb-1">
-                Email
-              </label>
+              <label className="block text-black font-medium mb-1">Email</label>
               <input
                 type="email"
                 placeholder="email@example.com"
@@ -206,7 +204,7 @@ function Page() {
 
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block text-gray-600 font-medium mb-1">
+                <label className="block text-black font-medium mb-1">
                   Date
                 </label>
                 <input
@@ -221,7 +219,7 @@ function Page() {
                 />
               </div>
               <div>
-                <label className="block text-gray-600 font-medium mb-1">
+                <label className="block text-black font-medium mb-1">
                   Time
                 </label>
                 <input
@@ -238,7 +236,7 @@ function Page() {
             </div>
 
             <div>
-              <label className="block text-gray-600 font-medium mb-1">
+              <label className="block text-black font-medium mb-1">
                 Guests
               </label>
               <input
@@ -268,7 +266,7 @@ function Page() {
             </div>
 
             <div>
-              <label className="block text-gray-600 font-medium mb-1">
+              <label className="block text-black font-medium mb-1">
                 Special Requests
               </label>
               <textarea
@@ -290,9 +288,7 @@ function Page() {
             </button>
           </form>
 
-          {message && (
-            <p className="mt-4 text-center text-gray-700">{message}</p>
-          )}
+          {message && <p className="mt-4 text-center text-black">{message}</p>}
         </div>
       </div>
       <Footer />
