@@ -230,7 +230,6 @@ function Page() {
                     setFormData({ ...formData, time: e.target.value })
                   }
                   required
-                  min={new Date().toTimeString().slice(0, 5)}
                 />
               </div>
             </div>

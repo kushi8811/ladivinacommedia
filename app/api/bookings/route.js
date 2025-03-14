@@ -94,6 +94,35 @@ export async function POST(req) {
       );
     } else {
       // Small bookings are automatically confirmed
+
+      await sendEmail(
+        process.env.EMAIL_USER, // Send to restaurant owner
+        "New Booking Confirmed - La Divina Commedia",
+        `
+        <h2>📢 New Booking Confirmed!</h2>
+        <p>A new booking has been automatically confirmed at <strong>La Divina Commedia</strong>.</p>
+        
+        <h3>📅 Booking Details:</h3>
+        <ul>
+          <li><strong>👤 Name:</strong> ${bookingData.name}</li>
+          <li><strong>📞 Phone:</strong> ${bookingData.phone}</li>
+          <li><strong>✉ Email:</strong> ${bookingData.email}</li>
+          <li><strong>📆 Date:</strong> ${bookingData.date}</li>
+          <li><strong>⏰ Time:</strong> ${bookingData.time}</li>
+          <li><strong>👥 Guests:</strong> ${bookingData.guests}</li>
+          <li><strong>📝 Special Request:</strong> ${
+            bookingData.special_request || "None"
+          }</li>
+        </ul>
+      
+        <p style="margin-top: 20px; font-style: italic; color: #555;">
+          This booking was automatically confirmed as it contains less than 6 guests.
+        </p>
+      
+        <p><strong>The La Divina Commedia Team</strong></p>
+        `
+      );
+
       await sendEmail(
         bookingData.email,
         "Booking Confirmed - La Divina Commedia",
