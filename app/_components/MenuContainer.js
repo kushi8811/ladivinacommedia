@@ -42,7 +42,7 @@ const MenuContainer = () => {
             divine.”
           </p>
 
-          <Link href="/menu">
+          <Link href="/menu.pdf">
             <button
               className="mt-4 sm:mt-6 px-6 py-2 border-2 text-primary-50 font-bold border-primary-50  
                              uppercase text-xs tracking-wider hover:bg-white hover:text-primary-50 

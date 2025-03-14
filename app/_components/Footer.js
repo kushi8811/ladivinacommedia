@@ -33,7 +33,7 @@ const Footer = () => {
           <Link href="/" className="hover:text-white transition">
             Home
           </Link>
-          <Link href="/menu" className="hover:text-white transition">
+          <Link href="/menu.pdf" className="hover:text-white transition">
             Menu
           </Link>
           <Link href="/booking" className="hover:text-white transition">
