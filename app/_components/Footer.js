@@ -53,7 +53,7 @@ const Footer = () => {
             <FaInstagram />
           </Link>
           <Link
-            href="https://www.facebook.com/tavernadivinacommedia/?locale=it_IT"
+            href="https://www.facebook.com/share/12H6YNPhkBp/?mibextid=wwXIfr"
             className="hover:text-white transition"
           >
             <FaFacebookF />
