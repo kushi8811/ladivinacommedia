@@ -34,8 +34,8 @@ export default function CookieBanner() {
         }}
         expires={150}
       >
-        "We use cookies to improve your experience. By using our site, you agree
-        to our use of cookies."
+        We use cookies to enhance your experience on our website. By clicking
+        "Accept!", you agree to our cookie policy.🍪
       </CookieConsent>
 
       <style jsx>{`
