@@ -7,7 +7,7 @@ export default function CookieBanner() {
     <div>
       <CookieConsent
         location="bottom"
-        buttonText="Accept! 🍪"
+        buttonText="Accept! 🍪 "
         cookieName="yourCookieName"
         style={{
           background: "#F8F8F8", // Light background
@@ -35,7 +35,7 @@ export default function CookieBanner() {
         expires={150}
       >
         We use cookies to enhance your experience on our website. By clicking
-        "Accept!", you agree to our cookie policy.🍪
+        &quot;Accept&quot;, you agree to our cookie policy.
       </CookieConsent>
 
       <style jsx>{`
